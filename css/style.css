@@ -7,6 +7,7 @@ body {
     background-color: #151718;
 }
 
+
 .contain {
     border-radius: 0 0 40px 40px;
     box-shadow: 0 3px 5px rgba(255, 255, 255, 0.10); 
@@ -15,12 +16,22 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.imagem , .nome{
+.icone , .nome{
     margin-right: 10px;
     margin-top: 8px;
 }
-.imagem{
+.icone{
     width: 22px;
+}
+.imagem{
+    width: 50%;
+    border-radius: 25px;
+}
+.imagem__esquerda{
+    margin-right: 6%;
+}
+.imagem__direita{
+    margin-left: 6%;
 }
 
 .navbar-nav{
@@ -33,4 +44,105 @@ body {
 }
 .lista{
     gap: 12%;
+}
+/* Home page */
+.apesentacao {
+    padding-top: 3%;
+    text-align: center;
+  }
+  .titulo{
+    font-size: 48px;
+    margin-bottom: 40px ;
+  }
+  .titulo__segundo, .titulo__terceiro {
+    display: flex;
+    color: white;
+    margin-top: 10%;
+    justify-content: center;
+    margin-bottom: 13%;
+  }
+  
+  .apesentacao > h1 {
+    font-size: 64px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #4b2c63 0%, #bfa2d4 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2%;
+  }
+  
+  .apesentacao > h2 {
+  color: #fff;
+}
+
+  .imageapre{
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+}
+.firstText{
+    display: flex;
+    align-items: center;
+}
+.paragrafo{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+  }
+
+ @media(max-width:576px){
+    .imageapre, .imageesco, .escolhas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem{
+        width: 80%;
+        margin-top: 10%;
+    }
+    .imagem__esquerda{
+        margin-bottom: 10%;
+    }
+}
+
+@media(max-width:768px){
+    .imageapre, .imageesco, .escolhas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem{
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    .imagem__direita{
+        margin-top: 5%;
+    }
+  } 
+
+  @media(max-width:992px){
+    .imageapre, .imageesco, .escolhas{
+        flex-direction: column;
+        align-items: center;
+         flex-direction: column;
+    }
+    .imagem{
+        height: 30%;
+    }
+  } 
+
+  .funcionalidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+  }
+  
+.escolhas{
+    display: flex;
+}
+
+.thirdPart{
+    margin-top: 20%;
+}
+.imageesco{
+    display: flex;
 }
