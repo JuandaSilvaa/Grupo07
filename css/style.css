@@ -88,8 +88,10 @@ body {
     font-size: 24px;
     font-weight: 600;
     color: white;
+    margin-bottom: 50px;
   }
 
+  /* Small Screen */
  @media(max-width:576px){
     .imageapre, .imageesco, .escolhas{
         flex-direction: column;
@@ -103,7 +105,7 @@ body {
         margin-bottom: 10%;
     }
 }
-
+/* Medium Screen */
 @media(max-width:768px){
     .imageapre, .imageesco, .escolhas{
         flex-direction: column;
@@ -117,7 +119,7 @@ body {
         margin-top: 5%;
     }
   } 
-
+/* Large Screen */
   @media(max-width:992px){
     .imageapre, .imageesco, .escolhas{
         flex-direction: column;
@@ -127,7 +129,7 @@ body {
     .imagem{
         height: 30%;
     }
-  } 
+  }
 
   .funcionalidades{
     display: flex;
@@ -145,4 +147,8 @@ body {
 }
 .imageesco{
     display: flex;
+}
+ol > li , ul > li{
+    padding-bottom: 5%;
+    
 }
