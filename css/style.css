@@ -8,7 +8,7 @@ body {
 }
 
 
-.contain {
+.barraNavegacao {
     border-radius: 0 0 40px 40px;
     box-shadow: 0 3px 5px rgba(255, 255, 255, 0.10); 
     height: 64px;
@@ -34,19 +34,17 @@ body {
     margin-left: 6%;
 }
 
-.navbar-nav{
- 
+.botoes{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
   margin-right: 20px;
+  gap: 12%;
 }
-.lista{
-    gap: 12%;
-}
+
 /* Home page */
-.apesentacao {
+.apresentacao {
     padding-top: 3%;
     text-align: center;
   }
@@ -62,7 +60,7 @@ body {
     margin-bottom: 13%;
   }
   
-  .apesentacao > h1 {
+  .apresentacao > h1 {
     font-size: 64px;
     font-weight: 700;
     background: linear-gradient(270deg, #4b2c63 0%, #bfa2d4 100%);
@@ -71,13 +69,12 @@ body {
     margin-bottom: 2%;
   }
   
-  .apesentacao > h2 {
+  .apresentacao > h2 {
   color: #fff;
 }
 
-  .imageapre{
+  .biography{
     display: flex;
-    justify-content: end;
     margin-top: 100px;
 }
 .firstText{
@@ -93,12 +90,12 @@ body {
 
   /* Small Screen */
  @media(max-width:576px){
-    .imageapre, .imageesco, .escolhas{
+    .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
     }
     .imagem{
-        width: 80%;
+    
         margin-top: 10%;
     }
     .imagem__esquerda{
@@ -107,27 +104,33 @@ body {
 }
 /* Medium Screen */
 @media(max-width:768px){
-    .imageapre, .imageesco, .escolhas{
+    .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
     }
     .imagem{
-        width: 80%;
         margin-bottom: 10%;
     }
-    .imagem__direita{
-        margin-top: 5%;
-    }
+
   } 
 /* Large Screen */
   @media(max-width:992px){
-    .imageapre, .imageesco, .escolhas{
+    .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
-         flex-direction: column;
+    }
+  }
+  /* extraLarge Screen */
+  @media(max-width:1400px){
+    .biography, .advantages, .listaFuncionalidade{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem__esquerda{
+         margin-bottom: 10%; /*It works, for some reason, but it works  */
     }
     .imagem{
-        height: 30%;
+        
     }
   }
 
@@ -138,14 +141,14 @@ body {
     margin-top: 8%;
   }
   
-.escolhas{
+.listaFuncionalidade{
     display: flex;
 }
 
 .thirdPart{
     margin-top: 20%;
 }
-.imageesco{
+.advantages{
     display: flex;
 }
 ol > li , ul > li{
