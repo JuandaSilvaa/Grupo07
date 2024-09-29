@@ -50,9 +50,8 @@ body {
     text-align: center;
   }
 
-.titulo__segundo, .titulo__terceiro {
+.titulo__segundo, .titulo__terceiro, .titulo__quarto {
     display: flex;
-    color: white;
     margin-top: 10%;
     justify-content: center;
     margin-bottom: 13%;
@@ -64,8 +63,8 @@ body {
     background: linear-gradient(270deg, #4b2c63 40%, #bfa2d4 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 2%;
-
+    margin-bottom: 10%;
+    
 }
   .apresentacao > h2 {
   color: #fff;
@@ -177,9 +176,9 @@ ol > li , ul > li{
     font-family: 'Inter', sans-serif;
     text-align: center;
     color: white;
-
 }
 
-/* fazer o media */
+
+
 
 
