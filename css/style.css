@@ -5,15 +5,16 @@
 
 body {
     background-color: #151718;
+    font-family: 'Inter', sans-serif;
 }
 
-
-.contain {
-    border-radius: 0 0 40px 40px;
-    box-shadow: 0 3px 5px rgba(255, 255, 255, 0.10); 
-    height: 64px;
-    padding: 1% 4% 2% 4%;
-    font-family: 'Inter', sans-serif;
+.barraNavegacao {
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.10); 
+  height: 64px;
+  padding: 1% 4% 2% 4%;
+  font-family: 'Inter', sans-serif;
+  background-color: #151718;
 }
 
 .icone , .nome{
@@ -34,16 +35,15 @@ body {
     margin-left: 6%;
 }
 
-.navbar-nav{
+.botoes{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
   margin-right: 20px;
+  gap: 12%;
 }
-.lista{
-    gap: 12%;
-}
+
 /* Home page */
 .apresentacao {
     padding-top: 3%;
@@ -57,23 +57,22 @@ body {
     justify-content: center;
     margin-bottom: 13%;
   }
-
-.titulo{
+ 
+.titulo {
     font-size: 64px;
     font-weight: 700;
     background: linear-gradient(270deg, #4b2c63 40%, #bfa2d4 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 2%;
-}
 
-.apresentacao > h2 {
+}
+  .apresentacao > h2 {
   color: #fff;
 }
 
-.imageapre{
+.biography{
     display: flex;
-    justify-content: end;
     margin-top: 100px;
 }
 
@@ -91,42 +90,52 @@ body {
 
   /* Small Screen */
  @media(max-width:576px){
-    .imageapre, .imageesco, .escolhas{
+    .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
     }
     .imagem{
-        width: 80%;
         margin-top: 10%;
     }
     .imagem__esquerda{
         margin-bottom: 10%;
     }
 }
+
 /* Medium Screen */
 @media(max-width:768px){
-    .imageapre, .imageesco, .escolhas{
+    .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
     }
     .imagem{
-        width: 80%;
         margin-bottom: 10%;
     }
-    .imagem__direita{
-        margin-top: 5%;
-    }
-  } 
+  .hamburguerbar{
+    margin-top: 3%;
+    background-color: #17191a;
+    border-radius: 0 0 25px 25px;
+  }
+} 
+
 /* Large Screen */
-@media(max-width:992px){
-    .imageapre, .imageesco, .escolhas{
+  @media(max-width:992px){
+    .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
-         flex-direction: column;
     }
-    .imagem{
-        height: 30%;
+  }
+
+  /* extraLarge Screen */
+  @media(max-width:1400px){
+    .biography, .advantages, .listaFuncionalidade{
+        flex-direction: column;
+        align-items: center;
     }
+    .imagem__esquerda{
+         margin-bottom: 10%; /*It works, for some reason, but it works  */
+    }
+   
   }
 
 .funcionalidades{
@@ -136,7 +145,7 @@ body {
     margin-top: 8%;
   }
   
-.escolhas{
+.listaFuncionalidade{
     display: flex;
 }
 
@@ -144,7 +153,7 @@ body {
     margin-top: 20%;
 }
 
-.imageesco{
+.advantages{
     display: flex;
 }
 
@@ -157,7 +166,6 @@ ol > li , ul > li{
     text-align: center;
     width: 45%;
 }
-/* fazer o media */
 
 .texto__principal{
     display: flex;
@@ -171,3 +179,7 @@ ol > li , ul > li{
     color: white;
 
 }
+
+/* fazer o media */
+
+
