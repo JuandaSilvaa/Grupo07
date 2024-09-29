@@ -100,6 +100,20 @@ body {
     .imagem__esquerda{
         margin-bottom: 10%;
     }
+
+    .container-inicial h1, .container-meio h1, .container-fim{
+        font-size: 1.4em;
+    } 
+    div p, li{
+        font-size: 0.9em;
+    }
+    /* .imgfazemos{
+        flex-direction: column;
+    } */
+    .imgfazemos > img{
+        width: 25%;
+        height: 25%;
+    }
 }
 
 /* Medium Screen */
@@ -123,6 +137,15 @@ body {
     .biography, .advantages, .listaFuncionalidade{
         flex-direction: column;
         align-items: center;
+    }
+
+    .imgfazemos{
+        flex-direction: column;
+
+    }
+    .imgfazemos > img{
+        width: 30%;
+        height: 30%;
     }
   }
 
@@ -182,4 +205,75 @@ ol > li , ul > li{
 
 /* fazer o media */
 
+/* css sobre */
 
+main{
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.container-inicial{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.container-inicial h1 {
+    font-size: 2.5em; 
+    color: #ffffff;
+    margin-bottom: 15px; 
+}
+
+div p{
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+div img{
+    display: block;
+    width: 50%;
+    /* height: auto; */
+    margin: auto;
+}
+.container-meio{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.imgfazemos{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.container-meio h1{
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-top: 3em;
+    margin-bottom: 15px;
+}
+li {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.container-meio ul{
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.container-fim{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container-fim h1{
+    font-size: 250%;
+    color: #ffffff;
+    margin-top: 3em;
+    margin-bottom: 15px;
+}
