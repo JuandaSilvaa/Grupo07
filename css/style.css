@@ -260,7 +260,7 @@ textarea{
     resize: none;
 }
 
-button{
+.btn_enviar{
     width: 426px;
     height: 42px;
     border-color: transparent;
@@ -270,7 +270,7 @@ button{
     color: #fff;
 }
 
-button:hover{
+.btn_enviar:hover{
     background: linear-gradient(90deg, #2E1A47 0%, #4B2C63 117.18%);
 }
 
