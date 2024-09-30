@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 body {
@@ -162,24 +163,103 @@ ol > li , ul > li{
 }
 
 .contato{
+    display: flex;
+    flex-direction: column;
     padding-top: 3%;
     text-align: center;
     width: 45%;
 }
 
-.texto__principal{
+.texto_principal{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 63px;
 }
 
-.texto__contatos{
+.texto_contatos{
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3em;
     text-align: center;
-    color: white;
+    color: #fff;
 
 }
 
-/* fazer o media */
+ .container_formulario{
+    font-family: 'Inter', sans-serif;
+    color: #fff;      
+} 
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 161px auto;
+    padding: 1em;
+    background-color: #1e2021;
+    width: 506px;
+    height: 638px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 10px #412457;
+    gap: 30px;
+}
+
+
+form > h2{
+    margin-top: 10px;
+    width: 426px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+input, textarea{
+    padding: 10px;
+    width: 426px;
+    height: 42px;
+    border: 1px solid #4b4c4d;
+    outline: none;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+    background-color: #292b2c;
+    color: #fff;
+    
+}
+
+input:hover, textarea:hover{
+    border: 1px solid #fff;
+    
+}
+
+
+input:focus, textarea:focus{
+    border: 1px solid #fff;
+    
+}
+
+fieldset > input{
+    width: 210px;
+}
+
+textarea{
+    height: 109px;
+    resize: none;
+}
+
+button{
+    width: 426px;
+    height: 42px;
+    border-color: transparent;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #2E1A47 0%, #4B2C63 220.18%);
+    border: none;
+    color: #fff;
+}
+
+button:hover{
+    background: linear-gradient(90deg, #2E1A47 0%, #4B2C63 117.18%);
+}
 
 
