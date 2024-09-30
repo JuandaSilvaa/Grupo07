@@ -50,13 +50,18 @@ body {
     text-align: center;
   }
 
-.titulo__segundo, .titulo__terceiro, .titulo__quarto {
+.titulo_segundo, .titulo_terceiro  {
     display: flex;
     margin-top: 10%;
     justify-content: center;
     margin-bottom: 13%;
   }
- 
+ .titulo__quarto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
 .titulo {
     font-size: 64px;
     font-weight: 700;
@@ -99,6 +104,13 @@ body {
     .imagem__esquerda{
         margin-bottom: 10%;
     }
+    .titulo{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .paragrafo{
+        font-size: 22px;
+    }
 }
 
 /* Medium Screen */
@@ -115,6 +127,7 @@ body {
     background-color: #17191a;
     border-radius: 0 0 25px 25px;
   }
+  
 } 
 
 /* Large Screen */
@@ -180,5 +193,7 @@ ol > li , ul > li{
 
 
 
-
-
+.titulo__quarto{
+    margin-bottom: -130px;
+    margin-top: 13%;
+}
