@@ -56,13 +56,13 @@
 }
 
 .depoimentos {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    #3d1246 12.5%,
-    #0a0a0a 87.5%,
+  background: radial-gradient(
+    #151718 7%,
+    #3d1246 45.5%,
+    #151718 70.5%,
     rgba(0, 0, 0, 0) 100%
-);
+
+ );
 }
 
 .swiper-pagination{
